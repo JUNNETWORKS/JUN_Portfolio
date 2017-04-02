@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+/*====================
+全体のスタイル
+====================*/
+* {
+  margin: 0; padding: 0;  /*全要素のマージン・パディングをリセット*/
+  line-height: 1.5;       /*全要素の行の高さを1.5倍にする*/
+  text-decoration:none;
+  position: relative;
+}
+body {
+  background-color: rgb(255, 255, 255); /*ページ全体の背景色*/
+  text-align: center;                 /*IE6以下でセンタリングするための対策*/
+  margin: 0; padding: 0;
+}
+div.wrap{
+  width: auto; margin: 0 auto; /*内容全体をセンタリング*/
+  text-align: left;             /*テキスト配置を左揃えにする*/
+}
+/*==================
+ヘッダー
+==================*/
+h1 {
+  position: relative;
+  top: 0px;
+  left: 20px;
+  font-size: 40px;
+  font-family: serif;
+}
+h1 a, li a{
+  color: white;
+}
+header{
+  position: fixed;
+  height: 62px;  /*ヘッダーの高さ*/
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+}
+ul.header-ul{
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  right: 100px;
+}
+li.header-li{
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  position: relative;
+  bottom: 25px;
+}
+/*===================
+メイン画面
+===================*/
+div.Top{
+  /*1905*810*/
+  width: 100%;
+  height: 810px;
+  background-image: url("img/mainimg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#quotation{
+  text-align: center;
+  position: relative;
+  top: 400px;
+  font-size: 500%;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/*=======================
+プロフィール画面
+=======================*/
+div.Profile{
+  background-image: url("img/back.png");
+  background-size: cover;
+}
+#imgtrans{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+h2#Profile{
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-size: 40px
+}
+#prcareer{
+  position: relative;
+  top: 20px;
+  float: left;
+  border: 4px ridge rgb(0, 0, 0);
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 3%;
+  background-color: white;
+}
+#name{
+  text-align: center;
+  font-size: 30px;
+}
+#mypicture{
+  text-align: center;
+  padding-right: 10%;
+}
+dl{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+dd:not(#webdd){
+  padding-bottom: 10px;
+}
+#Mystudying{
+  position: relative;
+  top: 20px;
+  text-align: center;
+  width: 40%;
+  float: left;
+  border: 4px ridge rgb(0,0,0);
+  margin-right: 5%;
+  margin-left: 3%;
+  background-color: white;
+}
+#studying{
+  font-size: 30px;
+}
+ul#study{
+  list-style-type: none;
+}
+#study li{
+  padding-top: 10px;
+}
+.studyicon{
+  height: 80px;
+  width: auto;
+}
+.Archievement{
+  clear: right;
+}
+.zurasu{
+  top: 50px;
+}
+#utikesi{
+  text-decoration: line-through;
+}
+h2#Archievement-title{
+  font-size: 40px;
+  text-align: center;
+  width: auto;
+  right: 25%;
+}
+.Archievement-row{
+  float: left;
+  border: 1px solid rgb(0,0,0);
+  background-color: rgb(116, 219, 210);
+  width: 20%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+#walldpicture{
+  width: 50%;
+  text-align: center;
+}
+a#walldurl{
+  color: rgb(0,0,0);
+}
+
+.TwitterTL{
+  clear: left;
+  top: 20px;
+}
+div.TwitterTL h2{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40px;
+}
+img.Twitterimg{
+  float: left;
+  width: 30%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+div.MyTwitter{
+  float: left;
+  width: 48%;
+  margin-top: 70px;
+  background-color: white;
+  border: 2px inset rgb(0, 240, 255) ;
+}
+
+div.lastwords{
+  top: 20px;
+  clear: left;
+  border: 2px solid rgb(0,0,0);
+  margin-right: 25%;
+  margin-left: 25%;
+  background-color: white;
+}
+#lasth2{
+text-align: center;
+font-size: 40px;
+}
+/*h5{
+  margin-right: 25%;
+  margin-left: 25%;
+}*/
+
+footer{
+  clear: left;
+  top: 40px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  background-color: rgb(171, 171, 171);
+}
+
+
+/*==========
+Link画面
+==========*/
+#linkpage{
+  background-image: url("img/sky.jpg");
+  background-size: cover;
+}
+
+.link-row{
+  top: 100px;
+}
+.link-row h2{
+  text-align: center;
+  font-size: 40px;
+}
+div.link{
+  float: left;
+  border: 1px solid rgb(0,0,0);
+  background-color: rgb(255, 255, 255);
+  width: 20%;
+  height: 300px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 20%;
+}
+.link p{
+  padding-left: 5px;
+}
+.icon{
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
