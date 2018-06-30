@@ -3,4 +3,6 @@
 
 This site is I first time HTML and CSS programming.
 
-I made it by 15 years old.
+I made it by 16 years old.
+
+(Programming with half years experience)
